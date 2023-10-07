@@ -69,47 +69,58 @@ import midterm.StackUnderflowException;
 import java.lang.*;
 import java.util.Scanner;
  public class PalindromeChecker {
-
+     // Main method
      public static void main(String[] args){
          PalindromeChecker myProgram;
          try{
              myProgram = new PalindromeChecker();
-             myProgram.run();
+             myProgram.run(); // Call the run method to start the program
          } catch (Exception e){
-             e.printStackTrace();
+             e.printStackTrace(); // Print any exceptions that occur
          }
-         System.exit(0);
+         System.exit(0); // Exit the program
      } // end of main method
+
+     // Run method for the program
      public void run( )throws Exception{
          Scanner keyboard = new Scanner(System.in);
          System.out.println("This application helps you evaluate if a string is a palindrome or not");
          System.out.print("Please enter the string: ");
-         String input = keyboard.nextLine();
+         String input = keyboard.nextLine(); // Read user input
          if (isPalindrome(input))
              System.out.println(input + " is a palindrome.");
          else
              System.out.println(input + " is not a palindrome." );
      } // end of run method
+
+     // Method to check if a string is a palindrome
      public boolean isPalindrome(String string) throws StackUnderflowException{
          MyStack<Character> stack = new MyStack<Character>();
          int index=0;
          Character topSymbol=null;
+
+         // Push the first half of the characters onto the stack
          while (index < string.length()/2){
              stack.push(string.charAt(index));
              index += 1;
          }
+
+         // If the string length is odd, skip the middle character
          if (string.length() % 2 != 0) {
              index += 1;
          }
+
+         // Compare characters from the stack with the remaining characters
          for (;index<string.length(); index++){
              topSymbol = stack.pop();
              if (topSymbol.charValue() != (string.charAt(index)) )
                  return false;
          }
+
+         // If the stack is empty, the string is a palindrome
          if (stack.isEmpty())
              return true;
          else
-
              return false;
      } // end of isPalindrome method
  } // end of PalindromeChecker class
