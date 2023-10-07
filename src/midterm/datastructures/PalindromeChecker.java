@@ -68,6 +68,30 @@ import midterm.StackUnderflowException;
 
 import java.lang.*;
 import java.util.Scanner;
+
+ /*
+  * Output when PalindromeChecker.java is executed:
+  *
+  * This application helps you evaluate if a string is a palindrome or not
+  * Please enter the string: racecar
+  * racecar is a palindrome.
+  *
+  * This application helps you evaluate if a string is a palindrome or not
+  * Please enter the string: hello
+  * hello is not a palindrome.
+  *
+  * This application helps you evaluate if a string is a palindrome or not
+  * Please enter the string: A man a plan a canal Panama
+  * A man a plan a canal Panama is a palindrome.
+  *
+  * This application helps you evaluate if a string is a palindrome or not
+  * Please enter the string: Was it a car or a cat I saw?
+  * Was it a car or a cat I saw? is a palindrome.
+  *
+  * This application helps you evaluate if a string is a palindrome or not
+  * Please enter the string: stackoverflow
+  * stackoverflow is not a palindrome.
+  */
  public class PalindromeChecker {
      // Main method
      public static void main(String[] args){
