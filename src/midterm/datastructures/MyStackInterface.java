@@ -1,4 +1,4 @@
-package midterm;
+package midterm.datastructures;
 
 public interface MyStackInterface<T>{
     public void push(T item );
@@ -6,4 +6,4 @@ public interface MyStackInterface<T>{
     public T peek() throws StackUnderflowException;
     public int size();
     public boolean isEmpty();
-} // end of midterm.MyStackInterface
+} // end of midterm.datastructures.MyStackInterface

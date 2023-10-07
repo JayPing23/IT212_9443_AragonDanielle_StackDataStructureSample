@@ -1,4 +1,4 @@
-package midterm;
+package midterm.datastructures;
 
 public class MyStack<T> implements MyStackInterface<T> {
     private Node<T> top;
@@ -53,4 +53,4 @@ public class MyStack<T> implements MyStackInterface<T> {
     public boolean isEmpty() {
         return top == null;
     }
-} // end of midterm.MyStack class
+} // end of midterm.datastructures.MyStack class

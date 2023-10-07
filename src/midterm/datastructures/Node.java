@@ -1,4 +1,4 @@
-package midterm;
+package midterm.datastructures;
 
 public class Node<T> {
     private T datum;
@@ -23,4 +23,4 @@ public class Node<T> {
     public void setNext(Node<T> n){
         next = n;
     }
-} // end of midterm.Node class
+} // end of midterm.datastructures.Node class

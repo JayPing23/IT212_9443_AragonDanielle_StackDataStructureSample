@@ -62,11 +62,12 @@ Algorithm:
   End of Algorithm.
  */
 
- package midterm.datastructures;
-import midterm.MyStack;
-import midterm.StackUnderflowException;
+ package midterm;
 
-import java.lang.*;
+ import midterm.datastructures.MyStack;
+ import midterm.datastructures.StackUnderflowException;
+
+ import java.lang.*;
 import java.util.Scanner;
 
  /*
@@ -118,7 +119,7 @@ import java.util.Scanner;
      } // end of run method
 
      // Method to check if a string is a palindrome
-     public boolean isPalindrome(String string) throws StackUnderflowException{
+     public boolean isPalindrome(String string) throws StackUnderflowException {
          MyStack<Character> stack = new MyStack<Character>();
          int index=0;
          Character topSymbol=null;

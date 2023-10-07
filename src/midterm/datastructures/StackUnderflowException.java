@@ -1,7 +1,7 @@
-package midterm;
+package midterm.datastructures;
 
 public class StackUnderflowException extends Exception{
     public StackUnderflowException(String message){
         super(message);
     }
-} // end of midterm.StackUnderflowException class
+} // end of midterm.datastructures.StackUnderflowException class
